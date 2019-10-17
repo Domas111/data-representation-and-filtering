@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+
+    <title>Contactify</title>
+
+
+    <script src="https://kit.fontawesome.com/f5712c0612.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+
+    </head>
+    <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/jquery.dynatable.js"></script>
+    <script src="./js/main.js"></script>
+    <link href="./css/tabulator_simple.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/tabulator.min.js"></script>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav shadow2" >
+
+    <span class="fa-stack fa-2x" style="font-size: 5px; position:relative; top: -16px; left: 160px; vertical-align:top;">
+            <i class="far fa-circle fa-stack-2x "style="color:#fff;" ></i>
+          <i class="fas fa-user-circle fa-stack-2x" style="color:#fff"  ></i>
+
+
+    </span>
+
+  <a class="navbar-brand" href="#" style="position:relative; left: 15px ;">CONTACTIFY</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <nav class="navbar navbar-light bg-nav"style="">
+
+  <form class="form-inline my-2 my-lg-0" >
+
+    <div class="btn-group" role="group"  style="padding-left: 15px; padding-bottom:0px; padding-right:15px; padding-top:0px; position:absolute; left:357%; top:32.5%;">
+      <button type="button" class="btn btns" style="width:20%;border-radius:30px 0px 0px 30px;"><a class="buttontext">DASHBOARD</a></button>
+      <button type="button" class="btn mbtn"style="width:20%;  padding-left: 10px;
+        padding-right: 10px;"><a class="buttontext">CONTACTS</a></button>
+      <button type="button" class="btn btns"style="width:20%;border-radius:0px 30px 30px 0px;   padding-left: 0px;
+        padding-right: 5px;"><a class="buttontext">NOTIFICATIONS</a></button>
+    </div>
+
+
+          <input style="position:absolute; top:32%; left:1800%;"class="search " type="search" placeholder="Search" aria-label="Search">
+          <button style="position:absolute; top:32%; left:2395%;"class="searchbutton" type="submit"><i class="fas fa-search" style="padding-left:3px;"></i></button></dv>
+
+<div class="dropdownclass" style="position:absolute; left: 4050%;top:0%;">
+  <button id="dropdownbutton"class="dropdown" type="button" data-toggle="dropdown"><i class="fas fa-user" style="position:relative; top:-1px; left:-15px;"></i><a style="position:relative; top:1px; left:0px; color:white;">Jorah Mormont</a><i class="fas fa-caret-down" style="position:relative; top:-1px; left:15px;"></i></button>
+    <ul style="margin-top: 10%;position: relative; left:-7.5%;border-width:1px; border-color:#08829A; width:200px; height:160px;" class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li style="border-bottom-width:1px; border-color:#08829A; height:38px; "role="presentation" ><a  style="color:#fff; padding:10px;"  class="menuitemas" role="menuitem" tabindex="-1" href="#"><i class="fas fa-users"></i> Groups</a></li>
+      <li style="height:38px;"role="presentation"><a  style="color:#fff;padding-top:10px;padding-left:10px;" class="menuitemas" role="menuitem" tabindex="-1" href="#"><i class="fas fa-comments"></i> Frequently contacted</a></li>
+      <li style="height:38px;"role="presentation"><a style="color:#fff;padding:10px;"   class="menuitemas"role="menuitem" tabindex="-1" href="#"><i class="fas fa-wrench"></i> Preferences</a></li>
+      <li style="height:38px;"role="presentation"><a  style="color:#fff;padding:10px;" role="menuitem" tabindex="-1" href="#"><i class="fas fa-power-off"></i> Log out</a></li>
+    </ul>
+  </div>
+
+
+
+  </form>
+
+</nav>
+
+
+</nav>
+<div class="secondbar darken shadow">
+  <input style="position:absolute; left:2.5%; top:12.75%;" class="mr-5 searchname"  id="searchName" type="search" placeholder="Name" aria-label="Name">
+  <select class="dropdownas mr-5" id="citydropdown" name="city">
+  <option value="" selected disabled hidden>City</option>
+  <option value="" >All</option>
+</select>
+  <input name="checkbox" type="checkbox" id="checkbox" class="checkboxas" style="position:absolute; bottom:86.5%; top:13.5%; left: 31%;">
+  <a class="showActive" style="color:white; position:absolute; left:32.5%; top:13.25%;">Show active</a>
+  <button class="filterbutton" id="filterbutton">FILTER</button>
+  <div style="position:absolute; right:10.75%; top:12%;">
+  <button class=addcontract><span class="fa-stack fa-2x">
+  <i class="fas fa-circle fa-stack-1x"style="color:rgba(0,0,0,0.3);"></i>
+  <i class="fas fa-plus fa-stack-1x " style="font-size:14px;"></i>
+</span><a>ADD NEW CONTRACT</a></button>
+</div>
+
+</div>
+
+    <div class="container-fluid pt-5 pt-5" style="height:100%;">
+  <div class="row">
+    <div class="col-md-2 pl-5 pr-5" style="height:200%;">
+      <div class="card carda" style="width: 100%; min-width:225px; height:420px;">
+  <center><img src="./img/userpic.jpg" class=" card-img-top profilepic" style="width:92.5%; height:92.5%;" alt="..."></center>
+
+
+    <div class="row no-gutters" style="">
+    <div class="col-md-5 cardtexta " ><ul style=" font-size: 14px;position:absolute; left:40%;padding-inline-start:0px;"class="cardtexta"><li class="cardtexta">Name:</li><li class="cardtexta">Surname:</li><li class="cardtexta">City:</li><li class="cardtexta">Email:</li><li class="cardtexta">Phone:</li></ul></div>
+    <div class="col-md-7 cardtextb" ><ul style="font-size: 14px;position:absolute; left:10%;padding-inline-start:0px;" class="cardtextb"><li class="cardtextb" id="nameb">Anthony</li><li class="cardtextb" id="surnameb">Hill</li><li class="cardtextb"  id="cityb">Los Angeles</li><li class="cardtextb" id="emailb">a.hill@gmail.com</li><li class="cardtextb"  id="emailb">+12135096995</li></ul></div>
+
+
+  </div>
+</div>
+    </div>
+
+    <div class="col-md-9  pl-5 pr-5" style="max-height:120%; min-height:120%; height:100%;"><div class="card" style="width: 100%">
+
+
+    <div id="cardtable" style="height:100%;max-height:120%; min-height:120%;"></div>
+
+</div></div>
+  </div>
+</div>
+
+
+<div class="container-fluid fixed-bottom footers"  >
+  <div class="row">
+    <div class="col-lg-5 " >
+        <ul class="m-0 pl-0 pt-3">
+          <il class="pl-5 "><a href="#" style="text-decoration: underline;">Dashboard</a></li>
+          <li class="pl-5 mt-2"><a href="#" style="text-decoration: underline; ">Contacts</a></li>
+          <li class="pl-5 mt-2"><a href="#" style="text-decoration: underline; ">Notifications</a></li>
+          <li></li>
+          <li class="pl-5 mt-3 pb-3"><a style="color:white;">© 2015 Contactify</a><a href="#" style="text-decoration: underline; padding-left:20px; ">About</a><a href="#" style=" text-decoration: underline; padding-left:20px;">Privacy<a/></li>
+        </ul>
+    </div>
+    <div class="col-lg-4" style="  background: rgba(0, 0, 0, 0.3);">
+      <div class="sync ">
+        <i class="fas fa-cloud-upload-alt" style="color:#fff; font-size: 35px; position:absolute; top:15%; left:5%; padding-bottom:5px;"></i>
+        <a style="position:absolute; top:12.5%; left:15%;">Last synced:</a>
+        <a style="position:absolute; top:25%; left:15%;">2015-06-02 14:33:10</a>
+        <a style="position:absolute; top:20%; right:5%; text-decoration:underline;"><i class="fas fa-sync-alt"style="padding-right:5px;"></i>Force sync</a>
+      </div>
+      <hr style="position:absolute; left:0%;top:40%; color=rgba(0,0,0,0.3);height:-1px; width:100%; border-bottom: 1px solid rgba(255,255,255,0.2); border-top: -1px solid rgba(255,255,255,0.1);  height:1px;"></hr>
+      <div class="help">
+        <i class="fas fa-stethoscope" style="color:#fff; font-size: 35px; position:absolute; bottom:15%; left:5%;"></i>
+
+        <ul style="margin-bottom:-20px;">
+          <li style=""><a style=";position:absolute; bottom:25%; left:15%;">Help desk and Resolution center available: </a></li>
+          <li style=""><a style=" position:absolute; bottom:10%; left:15%;">I-IV 8:00-18:00, V 8:00-16:45</a></li>
+        </ul>
+        <!--<a style="position:relative; top:20px; right:100px;">I-IV 8:00-18:00, V 8:00-16:45</a> -->
+
+      </div>
+
+    </div>
+
+    <div class="col-lg-3">
+      <ul class="m-0 p-0">
+        <li  class="pl-2 pt-3 mb-1" ><a href="#" style="text-decoration: underline;">Groups</a></li>
+        <li  class="pl-2 pt-1 mb-1" ><a href="#" style="text-decoration: underline;">Frequently contacted</a></li>
+        <li class="pl-2 pt-1 mb-1" ><a href="#" style="text-decoration: underline; ">Preferences</a></li>
+        <li  class="pl-2 pt-1 mb-1" ><a href="#" style="text-decoration: underline; ">Log out</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+</html>
